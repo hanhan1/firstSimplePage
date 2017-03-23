@@ -1,5 +1,7 @@
 *{
- 
+  width:960px;
+ margin-left: auto;
+ margin-right:auto;
   list-style:none;
 }
 .logo{
@@ -13,12 +15,10 @@
   line-height: 330px;
 }
 .footer{
+ text-align: center;
   background-color:#ffffff;
-  margin:0 auto;
-  padding:0;
-  text-align:center;
   margin-bottom:26px;
-
+  
 }
 .circle{
   background:#d8d8d8;
@@ -74,14 +74,15 @@
   margin-right:auto;
   margin-top:18px;
 }
-
 .block1{
- display:inline-block;
+ display: inline-block;
+ width:295px;
  margin-top:42px;
- margin-right: 32px;
- margin-left:16px;
+ margin-right:16px;
+ margin-left:5px;
  
 }
+
 .foot1{
   background:#d8d8d8;
   border-radius:4px;
@@ -95,6 +96,7 @@
   width:204px;
   height:24px;
   margin-top: 19px;
+  float: left;
 }
 
 .ex2{
@@ -103,4 +105,5 @@
   width:288px;
   height:16px;
   margin-top:14px;
+  float:left;
 }
