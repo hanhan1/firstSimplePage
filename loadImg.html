@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+    img{
+        height:200px;
+        width:200px;
+    }
+    .imgWrapper{
+        height: 200px;
+        width: 200px;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        border: 1px solid red;
+    }
+    </style>
+</head>
+<body>
+    <div class="imgWrapper">
+          <img  data-src="http://i1.piimg.com/567571/07ab5b41b0bb5786.png" src="http://i2.muimg.com/567571/7dea2a43703535ab.png" alt="">
+    </div>
+    <script>
+    var allImgs = document.getElementsByTagName('img')
+    var i 
+    for(i=0;i<allImgs.length;i++){
+        let img = allImgs[i]
+        let url = img.getAttribute('data-src')
+        let tempImg=document.createElement('img')
+        let index = i
+        tempImg.src=url
+        tempImg.onload=function(){
+            img.src=url
+        }
+    }
+    </script>
+</body>
+</html>
